@@ -17,7 +17,7 @@ describe('UsersService', () => {
     expect(usersService).toBeTruthy();
   });
 
-  describe('all', () => {
+  fdescribe('all', () => {
     it('should return a collection of users', () => {
       const userResponse = [
         {
@@ -34,8 +34,11 @@ describe('UsersService', () => {
         }
       ];
       let response;
+      
+      //This spyOn method mocks the usersService to simulate the mockData
       spyOn(usersService, 'all').and.returnValue(of(userResponse));
 
+      //This subscribe method gets the usersService method and inserts in the response that will be compared
       usersService.all().subscribe(res => {
         response = res;
       });
