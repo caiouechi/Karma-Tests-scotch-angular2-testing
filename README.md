@@ -1,6 +1,7 @@
 # AngularTesting
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.1.2.
+The full details are found on https://scotch.io/tutorials/testing-angular-with-jasmine-and-karma-part-1#toc-testing-an-angular-service
 
 ## Development server
 
